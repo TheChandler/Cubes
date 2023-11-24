@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="inputs">
+        <div>
+            <label>Cube Cout</label>
+            <input id="cube-count" type="range" min="1" max="100" value="15">
+        </div>
+        <div>
+            <label>Size limit</label>
+            <input id="slider1" type="range" min="0" max="100" value="100">
+        </div>
+        <div>
+
+            <label>PowA</label>
+            <input id="slider2" type="range" min="0" max="100" value="50">
+        </div>
+        <div>
+            <label>PowB</label>
+            <input id="slider3" type="range" min="0" max="100" value="100">
+        </div>
+        <div>
+            <label>Scale</label>
+            <input id="slider4" type="range" min="0" max="100" value="25">
+        </div>
+        <div>
+            <label>Rotation</label>
+            <input id="slider5" type="range" min="0" max="100" value="0">
+        </div>
+        <div>
+            <label>Noise Scale</label>
+            <input id="slider6" type="range" min=".01" max=".99" step=".01">
+        </div>
+        <div>
+            <button id="renoise">Renoise</button>
+            <label for="use-rgb">
+                <input type="checkbox" id="use-rgb" value="false">
+                Use RGB</label>
+        </div>
+    </div>
+    <canvas id="canv">what</canvas>
+</body>
+
+</html>
+<script src="Game.js" type="module"></script>
