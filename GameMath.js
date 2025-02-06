@@ -1,6 +1,6 @@
-import { ctx } from "./Game.js";
 
-export class Vector2 {
+
+class Vector2 {
     constructor(x, y) {
         if (x[1]) {
             this.x = x[0]
@@ -54,7 +54,7 @@ function convertToVector2(a, b) {
 }
 
 
-export class Line {
+ class Line {
     constructor(a, b) {
         try {
             this.a = convertToVector2(a);
@@ -110,7 +110,7 @@ export class Line {
 }
 
 
-export class Circle {
+class Circle {
     constructor(x, y, r) {
         this.position = new Vector2(x, y);
         this.radius = r;
@@ -171,7 +171,7 @@ export class Circle {
 }
 
 
-export class Polygon {
+class Polygon {
     /**
      * 
      * @param {[Vector2] } points
@@ -245,7 +245,7 @@ export class Polygon {
         return "new Polygon([" + this.points.reduce((val, val2) => val + "," + val2) + "])";
     }
 }
-export class Sprite {
+class Sprite {
     constructor(image, x, y, width, height) {
         this.image = image;
 
@@ -268,7 +268,7 @@ export class Sprite {
 }
 
 //Stolen from https://github.com/joeiddon/perlin/blob/master/perlin.js until I'm able to wrap my tiny brain around it
-export class Perlin {
+class Perlin {
     constructor(){
         this.seed();
     }

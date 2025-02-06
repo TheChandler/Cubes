@@ -1,12 +1,10 @@
-import { Vector2 } from "./GameMath.js";
-import { canvas } from "./Game.js";
 
 const SPEED = 170;
 
 
 //This is pretty dumb but it basically turns ctx into a camera object
 // Overrides the methods listed below with ones that take position into account
-export function MakeGameCamera(ctx, canvas, x, y) {
+function MakeGameCamera(ctx, canvas, x, y) {
     let ctxarc = ctx.arc;
     let ctxmoveTo = ctx.moveTo;
     let ctxlineTo = ctx.lineTo;

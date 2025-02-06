@@ -1,8 +1,7 @@
-import { ctx } from "../Game.js";
-import { Circle, Perlin, Polygon, Vector2 } from "../GameMath.js";
+
 let perlin = new Perlin();
 
-export class Cubes {
+ class Cubes {
     constructor() {
         document.getElementById('cube-count').addEventListener('change', this.create.bind(this))
         document.getElementById('slider1').addEventListener('change', this.create.bind(this))
